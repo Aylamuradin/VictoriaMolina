@@ -50,12 +50,15 @@
                 <div id="dimmer" class="square-black"></div>
                 <!-- Imagen dibujo mujer pelo rizado -->
                 <img id="avatar" src="Imagenes/MujerPeloRizado.png" alt="mujer pelo rizado" class="img-womanCurlyHair">
-                <div id="speechBubble" class="speech-bubble animation-parent">
+                <div id="speechBubble" class="speech-bubble">
                     <!-- Bocadillo de la presentacion -->
-                    <p class="txt-presentation">Hola, mi nombre es <span class="txt-myName">Victoria</span>.<br>
-                        Soy Desarrolladora full-stack y Desarrolladora Unity.<br>
-                        ¡Echa un vistazo a mi portfolio! :)
-                    </p>
+                    <div class="aux-speech-bubble  animation-parent">
+                        <p class="txt-presentation">Hola, mi nombre es <span class="txt-myName">Victoria</span>.<br>
+                            Soy Desarrolladora full-stack y Desarrolladora Unity.<br>
+                            ¡Echa un vistazo a mi portfolio! :)
+                        </p>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -105,10 +108,8 @@
                     <h3 class="tittle-secondary-section">Contacto</h3>
                 </a>
             </div>
-            <div id="scrollableDivProyectos"
-                class="main-section color-bg-proyectos proyectos color-txt-proyectos overflow-scroll">
-                <div class="proyecto">
-                    <h4 class="txt-name-proyect text-center ">Walking</h4>
+            <div id="scrollableDivProyectos" class="main-section color-bg-proyectos proyectos color-txt-proyectos overflow-scroll">
+                <div class="proyecto">  
                     <div class="continidoProyecto">
                         <div class="w-100">
                             <div class="aspect-ratio-16-9">
@@ -116,7 +117,7 @@
                             </div>
                         </div>
                         <div class="txt-body-proyect w-100">
-
+                            <h4 class="txt-name-proyect text-center ">Walking</h4>
                             <p> <span class="worldResalt">Walking</span> es uno de los primeros juegos realistas que
                                 desarrollé. Programado en Unity en lenguaje C# para PC. Es un juego de terror preparado
                                 para sorprenderte y mantenerte en tensión gracias a su aleatoriedad que hará de
@@ -128,7 +129,6 @@
                     </div>
                 </div>
                 <div class="proyecto">
-                    <h4 class="txt-name-proyect">Marco, Back home</h4>
                     <div class="continidoProyecto">
                         <div class="w-100">
                             <div class="aspect-ratio-16-9">
@@ -136,6 +136,7 @@
                             </div>
                         </div>
                         <div class="txt-body-proyect w-100">
+                            <h4 class="txt-name-proyect">Marco, Back home</h4>
                             <p><span class="worldResalt">Marco</span> es un juego realizado para una jam, en el que
                                 tenías que desarrollar la idea, diseñarla y animarla en 2 días. En él tendrás que guiar
                                 a Marco, un niño indefenso, para llegar a casa con su madre.</p>
@@ -144,7 +145,7 @@
                     </div>
                 </div>
                 <div class="proyecto">
-                    <h4 class="txt-name-proyect">Avian Patrol</h4>
+                    
                     <div class="continidoProyecto">
                         <div class="w-100">
                             <div class="aspect-ratio-16-9">
@@ -152,6 +153,7 @@
                             </div>
                         </div>
                         <div class="txt-body-proyect w-100">
+                            <h4 class="txt-name-proyect">Avian Patrol</h4>
                             <p><span class="worldResalt">Avian Patrol</span> es uno de los primeros juegos creados para
                                 móvil que desarrollé. En él manejas con una paloma que va surcando los cielos de una
                                 ciudad. Se puede jugar tanto en PC como en móvil, siendo recomendable este último.</p>
@@ -182,7 +184,7 @@
                     <div class="contactos">
                         <div class="contacto">
                             <img src="Imagenes/IconEmail.png" alt="icono correo electronico">
-                            <p class="txt-contacto">victoria.molina89@gmail.com</p>
+                            <a href="mailto:victoria.molina89@gmail.com" class="txt-contacto">victoria.molina89@gmail.com</a>
                             <input type="button" id="btnCorreo" class="btn-copy">
                         </div>
                         <a href="https://misska.itch.io/" class="contacto-link" target="_blank">

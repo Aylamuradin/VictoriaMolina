@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    console.log("HOLI");
 
 
     init();
@@ -39,21 +38,21 @@ $(document).ready(function () {
     });
 
     $('nav a').on('mouseenter', function (event) {
-        console.log('entrando')
+        
         gsap.to($(this).find('.folder-image'), { duration: 0.3, rotation: 3});
         gsap.to($(this).find('.folder-image'), { duration: 0.3, scale:0.9, ease:"back.out(4)"});
 
     });
 
     $('nav a').on('mouseleave', function (event) {
-        console.log('saliendo')
+        
         gsap.killTweensOf($(this).find('.folder-image'))
         gsap.to($(this).find('.folder-image'), { duration: 0.2, rotation: 0,scale:1});
     });
 
 
     $('#btnCorreo').click(function () {
-        console.log("copiando correo al portapapeles...")
+
         CopyText("victoria.molina89@gmail.com");
     });
 
@@ -63,35 +62,35 @@ $(document).ready(function () {
     }
 
     function ShowSobreMi() {
-        console.log("Sobre mi");
+        
         HideAll();
         $('#sobre-mi').removeClass('d-none');
         ChangeImg();
     }
 
     function ShowProyectos() {
-        console.log("Proyectos");
+        
         HideAll();
         $('#proyectos').removeClass('d-none');
         ChangeImg();
     }
 
     function ShowContacto() {
-        console.log("Contacto");
+       
         HideAll();
         $('#contacto').removeClass('d-none');
         ChangeImg();
     }
 
     function HideAll() {
-        console.log("ocultando secciones...")
+        
         $('.ShowHide').addClass("d-none");
     }
 
     function CopyText(textoACopiar) {
         // Usar la API del portapapeles para copiar el texto
         navigator.clipboard.writeText(textoACopiar).then(function () {
-            console.log('Texto copiado al portapapeles');
+           
             mostrarNotificacion();
         }).catch(function (error) {
             console.error('Error al copiar el texto: ', error);
@@ -112,10 +111,12 @@ $(document).ready(function () {
         var scrollTop = $this.scrollTop();
         var divHeight = $this.height();
 
+        scrollHeight = 150;
+
         // Verificar si ha llegado al final del scroll
         if (scrollTop + divHeight >= scrollHeight - 22) {
             $('#arrow-sobreMi').hide(); // Ocultar la imagen
-            console.log("Hemos llegado al final del scroll");
+           
         } else {
             $('#arrow-sobreMi').show(); // Mostrar la imagen si no está al final
         }
@@ -127,10 +128,12 @@ $(document).ready(function () {
         var scrollTop = $this.scrollTop();
         var divHeight = $this.height();
 
+        scrollHeight = 600;
+        
         // Verificar si ha llegado al final del scroll
         if (scrollTop + divHeight >= scrollHeight - 22) {
             $('#arrow-proyectos').hide(); // Ocultar la imagen
-            console.log("Hemos llegado al final del scroll");
+            
         } else {
             $('#arrow-proyectos').show(); // Mostrar la imagen si no está al final
         }

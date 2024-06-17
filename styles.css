@@ -159,14 +159,23 @@ nav>ul>li>a>h2 {
     font-family: var(--tipografia);
     font-size: 1rem;
     text-align: center;
-    padding-bottom: 20px;
+    padding: 10px;
+}
+
+.aux-speech-bubble {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 78%;
 }
 
 .speech-bubble {
+   
     position: fixed;
     width: 90%;
     height: 20%;
     top: 20%;
+    min-height: 165px;
     left: 5%;
     background-image: url('Imagenes\\Bocadillo.png');
     /* Ruta a tu imagen de fondo */
@@ -207,6 +216,7 @@ nav>ul>li>a>h2 {
     text-align: center;
 }
 .w-100 {
+    max-width: 640px;
     width: 100%;
 }
 
@@ -301,7 +311,7 @@ nav>ul>li>a>h2 {
 }
 
 .img-foto {
-    max-width: 40%;
+    max-width: 90%;
     height: auto;
     border-color: #edafb8;
     border-width: 3px;
@@ -366,6 +376,7 @@ nav>ul>li>a>h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px
 }
 
 .proyecto {
@@ -676,6 +687,7 @@ nav>ul>li>a>h2 {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        padding: 40px;
     }
 
     .continidoProyecto>iframe {
@@ -683,7 +695,8 @@ nav>ul>li>a>h2 {
     }
 
     .arrow-down {
-        max-width: 2%;
+        display: none;
+        /* max-width: 2%; */
     }
 
     .txt-body-proyect {
