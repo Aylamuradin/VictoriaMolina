@@ -1,0 +1,741 @@
+:root {
+    --crema: #f7e1d7;
+    --rosa: #edafb8;
+    --marron: #9d8189;
+    --verdeClaro: #b0c4b1;
+    --verdeOscuro: #4a5759;
+    --tipografia: "Architects Daughter", cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    background-color: var(--crema);
+    font-family: var(--tipografia);
+}
+
+.visually-hidden,
+.visually-hidden-focusable:not(:focus):not(:focus-within) {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+.background-image-main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 90% 90%;
+    /* Ajusta la imagen para que cubra todo el fondo */
+    background-position: center;
+    /* Centra la imagen de fondo */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    z-index: -1;
+    /* Asegura que el fondo esté detrás del contenido */
+}
+
+.background-image-intro {
+    background-image: url('Imagenes\\Tablet.png');
+    /* Ruta a tu imagen de fondo */
+}
+
+.background-image-sections {
+    background-image: url('Imagenes\\MovilSecciones.png');
+    /* Ruta a tu imagen de fondo */
+}
+
+.aLink>a:link {
+    text-decoration: none;
+}
+
+.overflow-scroll {
+    overflow: auto;
+}
+
+/* NAV */
+nav {
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+}
+
+nav>ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 10%;
+    left: 5%;
+    width: 90%;
+    height: 80%;
+    /* Uso del flex-box */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav>ul>li {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    list-style-type: none;
+    /* Uso del flex-box */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav>ul>li>a {
+    /* Uso del flex-box */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav>ul>li>a:link {
+    color: var(--verdeOscuro);
+    text-decoration: none;
+}
+
+.folder-image {
+    max-width: 60%;
+    height: auto;
+}
+
+nav>ul>li>a>h2 {
+    width: 60%;
+    padding: 5px;
+    margin-top: 5px;
+    /* font-family: "Architects Daughter", cursive; */
+    font-family: var(--tipografia);
+    font-size: 0.8rem;
+    text-align: center;
+    background-color: #eae7df;
+    border-radius: 8px;
+}
+
+
+/* INTRO */
+.square-black {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.img-womanCurlyHair {
+    position: fixed;
+    max-width: 90%;
+    height: auto;
+    bottom: -1%;
+    right: -10%;
+}
+
+.txt-presentation {
+    /* font-family: "Architects Daughter", cursive; */
+    font-family: var(--tipografia);
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.speech-bubble {
+    position: fixed;
+    width: 90%;
+    height: 20%;
+    top: 20%;
+    left: 5%;
+    background-image: url('Imagenes\\Bocadillo.png');
+    /* Ruta a tu imagen de fondo */
+    background-size: 100% 100%;
+    /* Ajusta la imagen para que cubra todo el fondo */
+    background-position: center;
+    /* Centra la imagen de fondo */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+
+}
+
+.txt-myName {
+    font-size: 1.5rem;
+    color: #00a99d;
+}
+
+.animation-parent>* {
+    opacity: 0;
+}
+
+.d-none {
+    display: none;
+}
+
+.aspect-ratio-16-9 {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: calc(9 / 16 * 100%); /* 16:9 aspect ratio using calc */
+}
+
+.position-relative{
+    position: relative;
+}
+
+.text-center {
+    text-align: center;
+}
+.w-100 {
+    width: 100%;
+}
+
+.full-size {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* SECCIONES */
+.sections {
+    position: fixed;
+    top: 10%;
+    left: 11%;
+    width: 78.5%;
+    height: 79.5%;
+}
+
+.menu-section {
+    width: 100%;
+    height: 6%;
+    /* Uso del flex-box */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.tittle-main-section {
+    width: 45%;
+    height: 100%;
+    padding-top: 5px;
+    /* font-family: "Architects Daughter", cursive; */
+    font-family: var(--tipografia);
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+}
+
+.menu-section>a {
+    width: 25%;
+    border-radius: 8px 8px 0 0;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.tittle-secondary-section {
+    width: 100%;
+    /* font-family: "Architects Daughter", cursive; */
+    font-family: var(--tipografia);
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 5px;
+}
+
+.main-section {
+    width: 100%;
+    height: 98%;
+    margin-top: -10px;
+    padding-top: 20px;
+    border-radius: 0 0 8px 8px;
+}
+
+.txt-section {
+    /* font-family: "Architects Daughter", cursive; */
+    font-family: var(--tipografia);
+    font-size: 0.9rem;
+    padding: 20px 20px 0 20px;
+}
+
+.arrow-down {
+    max-width: 10%;
+    position: fixed;
+    bottom: 10%;
+    left: 45%;
+    z-index: 1000;
+}
+
+/* Sobre mi */
+.color-bg-aboutMe {
+    background-color: #9d8189;
+}
+
+.img-foto {
+    position: relative;
+    top: 0;
+    left: 0;
+    max-width: 40%;
+    height: auto;
+    border-color: #edafb8;
+    border-width: 10px;
+    border-style: solid;
+}
+
+.color-txt-sobreMi {
+    color: #edafb8;
+}
+
+.color-border-menu-sobreMi>a {
+    border-color: #9d8189;
+}
+
+.color-border-menu-sobreMi>a>h3 {
+    color: #9d8189;
+}
+
+.btns-dowload {
+    /* Uso del flex-box */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.download-button {
+    padding: 10px 20px;
+    margin: 20px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    background-color: var(--rosa);
+    color: var(--verdeOscuro);
+    font-weight: 400;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+
+/* Proyectos */
+.color-bg-proyectos {
+    background-color: #4a5759;
+}
+
+.color-txt-proyectos {
+    color: #b0c4b1;
+}
+
+.color-border-menu-proyectos>a {
+    border-color: #4a5759;
+}
+
+.color-border-menu-proyectos>a>h3 {
+    color: #4a5759;
+}
+
+.proyectos {
+    /* Uso del flex-box */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proyecto {
+    width: 95%;
+    margin-bottom: 2px;
+    border-color: #b0c4b1;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.txt-name-proyect {
+    /* font-family: "Architects Daughter", cursive; */
+    font-size: 1rem;
+    padding: 8px;
+}
+
+.continidoProyecto {
+    /* Uso del flex-box */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.continidoProyecto>iframe {
+    max-width: 100%;
+}
+
+.txt-body-proyect {
+    width: 80%;
+    /* font-family: "Architects Daughter", cursive; */
+    font-size: 0.8rem;
+    padding: 10px;
+    text-align: center;
+}
+
+.worldResalt {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.txt-body-proyect>p {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+/* Contacto */
+.color-bg-contacto {
+    background-color: #edafb8;
+}
+
+.color-txt-contacto {
+    color: #9d8189;
+}
+
+.color-border-menu-contacto>a {
+    border-color: #edafb8;
+}
+
+.color-border-menu-contacto>a>h3 {
+    color: #9d8189;
+}
+
+.section-contacto {
+    width: 100%;
+    height: 80%;
+    /* Uso del flex-box */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img-contacto {
+    max-width: 60%;
+}
+
+.contactos {
+    width: 100%;
+    /* Uso del flex-box */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto {
+    width: 90%;
+    /* Uso del flex-box */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacto>img {
+    max-width: 10%;
+    min-width: 5%;
+}
+
+.btn-copy {
+    width: 10%;
+    height: auto;
+    background-color: #c69ea8;
+    background-image: url('Imagenes\\IconCopy.png');
+    /* Ruta a tu imagen de fondo */
+    background-size: 80% 80%;
+    /* Ajusta la imagen para que cubra todo el fondo */
+    background-position: center;
+    /* Centra la imagen de fondo */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    border-radius: 8px;
+    border-color: #c69ea8;
+}
+
+.contacto-link {
+    width: 90%;
+    /* Uso del flex-box */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contacto-link>img {
+    max-width: 15%;
+    padding: 2px;
+}
+
+.contacto-link>p {
+    padding: 10px;
+}
+
+.txt-contacto {
+    /* font-family: "Architects Daughter", cursive; */
+    font-size: 0.9rem;
+    padding: 15px 0 0 5px;
+}
+
+#notificacion {
+    display: none;
+    background-color: var(--marron);
+    color: var(--rosa);
+    padding: 15px;
+    position: fixed;
+    bottom: 10px;
+    left: 20%;
+    z-index: 1000;
+    border-radius: 8px;
+}
+
+/* PARA PC */
+
+@media only screen and (min-width: 601px) {
+
+    /* INTRO */
+    .img-womanCurlyHair {
+        right: 0;
+    }
+
+    .speech-bubble {
+        height: 25%;
+        top: 10%;
+    }
+
+    .txt-presentation {
+        font-size: 2rem;
+    }
+
+    .txt-myName {
+        font-size: 3rem;
+    }
+
+    /* INICIO */
+    .background-image-intro {
+        background-image: url('Imagenes\\Pc.png');
+        /* Ruta a tu imagen de fondo */
+    }
+
+    .background-image-sections {
+        background-image: url('Imagenes\\PcSecciones.png');
+        /* Ruta a tu imagen de fondo */
+        background-size: 130% 130%;
+        /* Ajusta la imagen para que cubra todo el fondo */
+        background-position: 50% -25%;
+        /* Centra la imagen de fondo */
+    }
+
+    nav {
+        width: 60%;
+        height: 50%;
+        left: 20%;
+    }
+
+    nav>ul {
+        /* Uso del flex-box */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    nav>ul>li>a>h2 {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    .folder-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* SECCIONES */
+    .sections {
+        top: 14.5%;
+        left: 5%;
+        width: 90%;
+        height: 72%;
+    }
+
+    .menu-section {
+        width: 100%;
+        height: 9%;
+        /* Uso del flex-box */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tittle-main-section {
+        width: 25%;
+        font-size: 1.5rem;
+        border-radius: 40px 40px 0 0;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .menu-section>a {
+        width: 25%;
+        height: 100%;
+        padding-top: 5px;
+        border-radius: 40px 40px 0 0;
+        border-style: solid;
+        border-width: 2px;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .tittle-secondary-section {
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+
+    .main-section {
+        width: 98%;
+        height: 96%;
+        margin-left: 1%;
+    }
+
+    /* SOBRE MI */
+
+    .divSobreMi {
+        /* Uso del flex-box */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .img-foto {
+        position: relative;
+        top: 0;
+        left: 5%;
+        max-width: 40%;
+        max-height: 500px;
+        height: auto;
+        border-color: #edafb8;
+        border-width: 10px;
+        border-style: solid;
+    }
+
+    .infoSobreMi {
+        position: relative;
+        max-width: 40%;
+    }
+
+    .txt-section {
+        font-size: 1.5rem;
+    }
+
+    .download-button {
+        font-size: 1.2rem;
+    }
+
+    /* PROYECTOS */
+
+    .proyecto {
+        height: 100%;
+    }
+
+    .txt-name-proyect {
+        font-size: 1.5rem;
+        padding-left: 50px;
+    }
+
+    .continidoProyecto {
+        /* Uso del flex-box */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .continidoProyecto>iframe {
+        max-width: 40%;
+    }
+
+    .arrow-down {
+        max-width: 5%;
+    }
+
+    .txt-body-proyect {
+        font-size: 1.2rem;
+        width: 60%;
+    }
+
+    /* CONTACTO */
+    .section-contacto {
+        width: 100%;
+        height: 100%;
+        /* Uso del flex-box */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .img-contacto {
+        max-width: 40%;
+        max-height: 500px;
+        margin-left: 10%;
+    }
+
+    .contacto {
+        width: 80%;
+        margin: 20px;
+        /* Uso del flex-box */
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .contacto-link {
+        width: 80%;
+        margin: 20px;
+    }
+
+    .txt-contacto {
+        font-size: 1.5rem;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .btn-copy {
+        width: 40px;
+        height: 40px;
+    }
+
+    #notificacion {
+        position: fixed;
+        bottom: 15%;
+        right: 20%;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}

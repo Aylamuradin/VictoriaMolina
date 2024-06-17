@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Mª Victoria Molina</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="visually-hidden">
+        <h1>Portfolio de María Victoria Molina Caetano</h1>
+    </header>
+
+
+
+    <main class="background-image-main background-image-intro">
+        <!-- INTRO -->
+        <section id="inicio" class="ShowHide">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#sobre-mi" class="link-sobre-mi">
+                            <img src="Imagenes/Carpeta.png" alt="folder" class="folder-image">
+                            <h2 class="background-h2">Sobre mí</h2>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#proyectos" class="link-proyectos">
+                            <img src="Imagenes/Carpeta.png" alt="folder" class="folder-image">
+                            <h2 class="background-h2">Proyectos</h2>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contacto" class="link-contacto">
+                            <img src="Imagenes/Carpeta.png" alt="folder" class="folder-image">
+                            <h2 class="background-h2">Contáctame!</h2>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="intro" class="animation-parent">
+                <!-- Este el el cuadrado negro del fondo -->
+                <div id="dimmer" class="square-black"></div>
+                <!-- Imagen dibujo mujer pelo rizado -->
+                <img id="avatar" src="Imagenes/MujerPeloRizado.png" alt="mujer pelo rizado" class="img-womanCurlyHair">
+                <div id="speechBubble" class="speech-bubble animation-parent">
+                    <!-- Bocadillo de la presentacion -->
+                    <p class="txt-presentation">Hola, mi nombre es <span class="txt-myName">Victoria</span>.<br>
+                        Soy Desarrolladora full-stack y Desarrolladora Unity.<br>
+                        ¡Echa un vistazo a mi portfolio! :)
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOBRE MI -->
+        <section id="sobre-mi" class="sections ShowHide d-none">
+            <div class="menu-section aLink color-border-menu-sobreMi">
+                <h2 class="tittle-main-section color-bg-aboutMe color-txt-sobreMi">Sobre mí</h2>
+                <a href="#proyectos" class="link-proyectos">
+                    <h3 class="tittle-secondary-section">Proyectos</h3>
+                </a>
+                <a href="#contacto" class="link-contacto">
+                    <h3 class="tittle-secondary-section">Contacto</h3>
+                </a>
+            </div>
+            <div id="scrollableDivSobreMi" class="main-section color-bg-aboutMe overflow-scroll divSobreMi">
+                <img src="Imagenes/IMG_Victoria.jpg" alt="Foto Victoria Molina Caetano" class="img-foto">
+                <div class="infoSobreMi">
+                    <p class="txt-section">¡Hola! Soy Victoria, bióloga de formación y programadora por pasión. Disfruto
+                        leyendo y me gusta que las cosas marchen sobre ruedas.</p>
+                    <p class="txt-section">Trabajo con JavaScript, Java y C#, y me encanta desarrollar proyectos con
+                        Unity. Estoy en busca de un trabajo donde pueda sentirme cómoda, mantener un entorno organizado
+                        y aplicar mis habilidades de manera efectiva.</p>
+                    <p class="txt-section">¡Hablemos y veamos cómo puedo contribuir a tu equipo!</p>
+                    <!-- <p class="txt-section">Soy activa y curiosa, siempre buscando aprender y mejorar. Licenciada en Biología, disfruto investigando y leyendo sobre este campo, pero mi verdadera pasión es la programación. Me encanta crear juegos y aplicaciones que ayuden a las personas, ya sea para relajarse o para facilitar su trabajo.</p> -->
+                    <div class="btns-dowload">
+                        <a href="Archivos/CV_MªVictoriaMolinaCaetano_Compacto.pdf" download class="download-button">CV
+                            Compacto</a>
+                        <a href="Archivos/CV_MªVictoriaMolinaCaetano_Extendido.pdf" download class="download-button">CV
+                            Extendido</a>
+                    </div>
+                </div>
+            </div>
+            <div id="arrow-sobreMi">
+                <img class="arrow-down" src="Imagenes\ArrowSobreMi.png" alt="">
+            </div>
+        </section>
+
+        <!-- PROYECTOS -->
+        <section id="proyectos" class="sections ShowHide d-none">
+            <div class="menu-section aLink color-border-menu-proyectos">
+                <a href="#sobre-mi" class="link-sobre-mi">
+                    <h3 class="tittle-secondary-section">Sobre mí</h3>
+                </a>
+                <h2 class="tittle-main-section color-bg-proyectos color-txt-proyectos">Proyectos</h2>
+                <a href="#contacto" class="link-contacto">
+                    <h3 class="tittle-secondary-section">Contacto</h3>
+                </a>
+            </div>
+            <div id="scrollableDivProyectos"
+                class="main-section color-bg-proyectos proyectos color-txt-proyectos overflow-scroll">
+                <div class="proyecto">
+                    <h4 class="txt-name-proyect text-center ">Walking</h4>
+                    <div class="continidoProyecto">
+                        <div class="w-100">
+                            <div class="aspect-ratio-16-9">
+                                <iframe src="https://www.youtube.com/embed/v3a9WunvS8A" frameborder="0" class="full-size"></iframe>
+                            </div>
+                        </div>
+                        <div class="txt-body-proyect w-100">
+
+                            <p> <span class="worldResalt">Walking</span> es uno de los primeros juegos realistas que
+                                desarrollé. Programado en Unity en lenguaje C# para PC. Es un juego de terror preparado
+                                para sorprenderte y mantenerte en tensión gracias a su aleatoriedad que hará de
+                                "Walking" un juego diferente cada vez que resucites.</p>
+                            <p>Realizado con Unity, incluye sistemas pathfinding, diseño y estructuración de niveles en
+                                entornos realistas, animación, modelado 3D y texturizado y creación de eventos
+                                aleatorios.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <h4 class="txt-name-proyect">Marco, Back home</h4>
+                    <div class="continidoProyecto">
+                        <div class="w-100">
+                            <div class="aspect-ratio-16-9">
+                                <iframe src="https://www.youtube.com/embed/-YWsfeZosMc" frameborder="0" class="full-size"></iframe>
+                            </div>
+                        </div>
+                        <div class="txt-body-proyect w-100">
+                            <p><span class="worldResalt">Marco</span> es un juego realizado para una jam, en el que
+                                tenías que desarrollar la idea, diseñarla y animarla en 2 días. En él tendrás que guiar
+                                a Marco, un niño indefenso, para llegar a casa con su madre.</p>
+                            <p>Realizado en Unity y programado en C#. Cuenta con una versión en PC y móvil.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <h4 class="txt-name-proyect">Avian Patrol</h4>
+                    <div class="continidoProyecto">
+                        <div class="w-100">
+                            <div class="aspect-ratio-16-9">
+                                <iframe src="https://www.youtube.com/embed/MuUgoQKpR9w" frameborder="0" class="full-size"></iframe>
+                            </div>
+                        </div>
+                        <div class="txt-body-proyect w-100">
+                            <p><span class="worldResalt">Avian Patrol</span> es uno de los primeros juegos creados para
+                                móvil que desarrollé. En él manejas con una paloma que va surcando los cielos de una
+                                ciudad. Se puede jugar tanto en PC como en móvil, siendo recomendable este último.</p>
+                            <p>Realizado en Unity y programado en C#.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="arrow-proyectos">
+                <img class="arrow-down" src="Imagenes\ArroProyectos.png" alt="">
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="sections ShowHide d-none">
+            <div class="menu-section aLink color-border-menu-contacto">
+                <a href="#sobre-mi" class="link-sobre-mi">
+                    <h3 class="tittle-secondary-section">Sobre mí</h3>
+                </a>
+                <a href="#proyectos" class="link-proyectos">
+                    <h3 class="tittle-secondary-section">Proyectos</h3>
+                </a>
+                <h2 class="tittle-main-section color-bg-contacto color-txt-contacto">Contacto</h2>
+            </div>
+            <div class="main-section color-bg-contacto ">
+                <div class="section-contacto">
+                    <img src="Imagenes/MujerPeloRizado.png" alt="Mujer de pelo rizado" class="img-contacto">
+                    <div class="contactos">
+                        <div class="contacto">
+                            <img src="Imagenes/IconEmail.png" alt="icono correo electronico">
+                            <p class="txt-contacto">victoria.molina89@gmail.com</p>
+                            <input type="button" id="btnCorreo" class="btn-copy">
+                        </div>
+                        <a href="https://misska.itch.io/" class="contacto-link">
+                            <img src="Imagenes/IconItchIO.png" alt="icono ItchIO">
+                            <p class="txt-section">ItchIO</p>
+                        </a>
+                        <a href="https://www.linkedin.com/in/victoria-molina-caetano-72b45b160/" class="contacto-link">
+                            <img src="Imagenes/IconLinkedin.png" alt="icono Linkedin">
+                            <p class="txt-section">Linkedin</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="notificacion">Texto copiado al portapapeles</div>
+        </section>
+    </main>
+
+    <footer class="d-none">
+        <p>&copy; 2024 Mi Nombre. Todos los derechos reservados.</p>
+    </footer>
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
