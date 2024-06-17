@@ -292,16 +292,22 @@ nav>ul>li>a>h2 {
     background-color: #9d8189;
 }
 
+.divSobreMi {
+    /* Uso del flex-box */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .img-foto {
-    position: relative;
-    top: 0;
-    left: 0;
     max-width: 40%;
     height: auto;
     border-color: #edafb8;
-    border-width: 10px;
+    border-width: 3px;
     border-style: solid;
 }
+
 
 .color-txt-sobreMi {
     color: #edafb8;
@@ -632,9 +638,6 @@ nav>ul>li>a>h2 {
     }
 
     .img-foto {
-        position: relative;
-        top: 0;
-        left: 5%;
         max-width: 40%;
         max-height: 500px;
         height: auto;
