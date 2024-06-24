@@ -535,6 +535,7 @@ nav>ul>li>a>h2 {
 
     /* INTRO */
     .img-womanCurlyHair {
+        max-height: 70%;
         right: 0;
     }
 
@@ -544,7 +545,7 @@ nav>ul>li>a>h2 {
     }
 
     .txt-presentation {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .txt-myName {
@@ -628,8 +629,8 @@ nav>ul>li>a>h2 {
     }
 
     .tittle-secondary-section {
-        font-size: 1.5rem;
-        padding: 5px;
+        font-size: 1.2rem;
+        padding: 3px;
     }
 
     .main-section {
@@ -663,7 +664,7 @@ nav>ul>li>a>h2 {
     }
 
     .txt-section {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .download-button {
@@ -717,7 +718,7 @@ nav>ul>li>a>h2 {
 
     .img-contacto {
         max-width: 40%;
-        max-height: 500px;
+        max-height: 100%;
         margin-left: 10%;
     }
 
@@ -753,5 +754,17 @@ nav>ul>li>a>h2 {
         right: 20%;
         text-align: center;
         font-size: 1.5rem;
+    }
+
+    /* PC grande */
+    @media only screen and (min-width: 1600px) {
+        .tittle-secondary-section {
+            font-size: 1.5rem;
+            padding: 5px;
+        }
+        /* sobre mi */
+        .txt-section {
+            font-size: 1.5rem;
+        }
     }
 }
